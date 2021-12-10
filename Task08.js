@@ -1,24 +1,24 @@
-function convertNumToTime(num)
+function numbersToTime(number)
 {
     var str1="";
     var str2="";
 
-    var hours = Math.floor(num / 60);
-    var min = num % 60;
+    var hours = Math.floor(number/ 60);
+    var min = number% 60;
     if (hours >1)
     {
-        str1="hours";
+        str1="Hours";
     } else{
-        str1="hour";
+        str1="Hour";
     }
    
 if (min> 1)
 {
-    str2="minutes";
+    str2="Minutes";
 }else {
-str2="minute";
+str2="Minute";
 }
     return hours +" "+str1+ "," + min + " "+ str2;
 }
-console.log(convertNumToTime(71))
-console.log(convertNumToTime(133))
+console.log(numbersToTime(71))
+console.log(numbersToTime(133))

@@ -1,7 +1,7 @@
-function calcArea(num1,num2,num3)
+function calculateArea(firstNumber,secondNumber,thirdNumber)
 {
-    var totsides=(num1+num2+num3)/2;
-    var area = Math.sqrt(totsides*((totsides-num1)*(totsides-num2)*(totsides-num3)))
+    var totalSides=(firstNumber+secondNumber+thirdNumber)/2
+    var area = Math.sqrt(totalSides*((totalSides-firstNumber)*(totalSides-secondNumber)*(totalSides-thirdNumber)))
     return "Area of a Triangle : "+area;
 }
-console.log(calcArea(3,4,5))
+console.log(calculateArea(3,4,5))

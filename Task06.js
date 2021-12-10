@@ -1,16 +1,16 @@
-function Maximum(num1,num2,num3,num4)
+function maximum(firstNumber,secondNumber,thirdNumber,fourthNumber)
 {
     var max = 0;
-    if (num1>= num2 && num1 >=num3 && num1 >= num4){
-        max = num1;
-    } else if (num2 >= num1 && num2 >= num3 && num2 >= num4){
-    max = num2;
+    if (firstNumber>= secondNumber && firstNumber >=thirdNumber && firstNumber >= fourthNumber){
+        max = firstNumber;
+    } else if (secondNumber >= firstNumber && secondNumber >= thirdNumber && secondNumber >= fourthNumber){
+    max = secondNumber;
     }
-    else if(num3>=num1 && num3 >=num2 && num3 >= num4){
-        max=num3;
+    else if(thirdNumber>=firstNumber && thirdNumber >=secondNumber && thirdNumber >= fourthNumber){
+        max=thirdNumber;
     } else {
-        max = num4;
+        max = fourthNumber;
     }
     return "Maximum Number: " + max;
 }
-console.log(Maximum(1,22,3,2))
+console.log(maximum(1,22,3,2))

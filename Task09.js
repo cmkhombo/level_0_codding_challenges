@@ -1,14 +1,14 @@
 
-function findVowel(sentence)
+function vowels(str)
 {
-    var vowels ="";
-    var vowel = ['a','e','i','o','u'];
-    for(i=0; i<sentence.length;i++)
+    var strVowels ="";
+    var vowels = ['a','e','i','o','u'];
+    for(let i=0; i<str.length;i++)
         {
-            if (vowel.includes(sentence[i]))
-            vowels +=sentence[i]+",";
+            if (vowels.includes(str[i]))
+            strVowels +=str[i]+",";
         }
-        console.log("Vowels: "+ vowels)
-    }
-    findVowel("Umuzi")
+        console.log("Vowels: "+ strVowels)
+}
+vowels("Umuzi")
     

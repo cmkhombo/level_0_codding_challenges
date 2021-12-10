@@ -1,4 +1,4 @@
-function sameLetters(str1, str2)
+function commonLetters(str1, str2)
 {
     var letters ="";
     for(let i in str2)
@@ -8,4 +8,4 @@ function sameLetters(str1, str2)
     }
     console.log("'Common Letters :" + letters+"'")
 }
-sameLetters("House","Computers")
+commonLetters("House","Computers")
