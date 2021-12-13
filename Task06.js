@@ -1,6 +1,6 @@
 function maximum(firstNumber,secondNumber,thirdNumber,fourthNumber)
 {
-    var max = 0;
+    let max = 0;
     if (firstNumber>= secondNumber && firstNumber >=thirdNumber && firstNumber >= fourthNumber){
         max = firstNumber;
     } else if (secondNumber >= firstNumber && secondNumber >= thirdNumber && secondNumber >= fourthNumber){
