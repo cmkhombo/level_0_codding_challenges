@@ -1,10 +1,10 @@
 function numbersToTime(number)
 {
-    var str1="";
-    var str2="";
+    let str1="";
+    let str2="";
 
-    var hours = Math.floor(number/ 60);
-    var min = number% 60;
+    let hours = Math.floor(number/ 60);
+    let min = number% 60;
     if (hours >1)
     {
         str1="Hours";

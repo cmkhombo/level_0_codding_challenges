@@ -1,6 +1,6 @@
 function commonLetters(str1, str2)
 {
-    var letters ="";
+    let letters ="";
     for(let i in str2)
     {
        if (str1.includes(str2[i]))

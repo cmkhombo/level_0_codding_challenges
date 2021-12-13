@@ -1,5 +1,5 @@
-var x = 0;
-var y = 1;
+let x = 0;
+let y = 1;
 console.log("Value of x: " + x)
 console.log("Value of y: "+ y)
 x=x+3;
