@@ -1,16 +1,11 @@
-function maximum(firstNumber,secondNumber,thirdNumber,fourthNumber)
-{
-    let max = 0;
-    if (firstNumber>= secondNumber && firstNumber >=thirdNumber && firstNumber >= fourthNumber){
-        max = firstNumber;
-    } else if (secondNumber >= firstNumber && secondNumber >= thirdNumber && secondNumber >= fourthNumber){
-    max = secondNumber;
+function maximum(params) {
+  let max = -Infinity;
+  for (let i = 0; i < arguments.length; i++) {
+    if (arguments[i] > max) {
+      max = arguments[i];
     }
-    else if(thirdNumber>=firstNumber && thirdNumber >=secondNumber && thirdNumber >= fourthNumber){
-        max=thirdNumber;
-    } else {
-        max = fourthNumber;
-    }
-    return "Maximum Number: " + max;
+  }
+  return max;
 }
-console.log(maximum(1,22,3,2))
+let maxNumber = maximum(45, 6, 3, 9, 90, 80, 43, 100, 200);
+console.log(maxNumber);
