@@ -3,12 +3,20 @@ function numbersToTime(number) {
   let str2 = '';
 
   let hours = Math.floor(number / 60);
-  let min = number % 60;
+  let min = 0;
+
+  if (number > 0 && number != 60) {
+    min = number % 60;
+  } else {
+    min = 60;
+  }
+
   if (hours > 1 || hours === 0) {
     str1 = 'Hours';
-  } else if ((hours = 0)) {
+  } else if ((hours = 1 && min === 60)) {
+    hours = 0;
     str1 = 'Hours';
-  } else {
+  } else if ((hours = 1)) {
     str1 = 'Hour';
   }
 
@@ -19,5 +27,6 @@ function numbersToTime(number) {
   }
   return hours + ' ' + str1 + ',' + min + ' ' + str2;
 }
-console.log(numbersToTime(11));
+console.log(numbersToTime(60));
 console.log(numbersToTime(133));
+console.log(numbersToTime(65));
